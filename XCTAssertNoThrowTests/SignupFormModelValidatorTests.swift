@@ -48,6 +48,25 @@ final class SignupFormModelValidatorTests: XCTestCase {
         let sut = SignupFormModelValidator()
         
         //Act and Assert
-        XCTAssertNoThrow(try sut.isFirstNameValid("Dhika"))
+        XCTAssertNoThrow(try sut.isFirstNameValid("Dhika"), "The isFirstNamevalid() should not have thrown an error when there are no illegal characters provided")
     }
+    
+    //MARK: - Do Try Catch
+    
+    func test_FirstNameValidation_WhenInvalidCharactersProvided_ThrowsAnError_withDoTryCatch() {
+        // Arrange
+        let sut = SignupFormModelValidator()
+        
+        do {
+            let _ = try sut.isFirstNameValid("Dhika*")
+            //if fail is not thrown maka jalankan
+            XCTFail("The isFirstNamevalid() was supposed to thrown an error when illegal characters used in user firstname")
+        } catch SignupError.illegalCharactersFound {
+            // Successfully passing
+            return
+        } catch {
+            XCTFail("The isFirstNamevalid() was supposed to thrown an error with error *.illegalsCharacterNotFound")
+        }
+    }
+    
 }
