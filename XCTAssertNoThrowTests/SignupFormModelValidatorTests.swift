@@ -43,4 +43,11 @@ final class SignupFormModelValidatorTests: XCTestCase {
         }
     }
     
+    func test_FirstNameValidation_WhenValidCharactesProvided_ThrowsNoErrors() {
+        // Arrange
+        let sut = SignupFormModelValidator()
+        
+        //Act and Assert
+        XCTAssertNoThrow(try sut.isFirstNameValid("Dhika"))
+    }
 }
