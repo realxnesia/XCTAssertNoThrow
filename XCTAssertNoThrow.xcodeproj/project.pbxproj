@@ -16,6 +16,10 @@
 		E6C4C78429812C8B0001EAD6 /* XCTAssertNoThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C78329812C8B0001EAD6 /* XCTAssertNoThrowTests.swift */; };
 		E6C4C78E29812C8B0001EAD6 /* XCTAssertNoThrowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C78D29812C8B0001EAD6 /* XCTAssertNoThrowUITests.swift */; };
 		E6C4C79029812C8B0001EAD6 /* XCTAssertNoThrowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C78F29812C8B0001EAD6 /* XCTAssertNoThrowUITestsLaunchTests.swift */; };
+		E6C4C79E29812D550001EAD6 /* SignupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C79D29812D550001EAD6 /* SignupError.swift */; };
+		E6C4C7A029812D670001EAD6 /* SignupFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C79F29812D670001EAD6 /* SignupFormValidator.swift */; };
+		E6C4C7A229812D7A0001EAD6 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7A129812D7A0001EAD6 /* SignupFormModel.swift */; };
+		E6C4C7A429812EF60001EAD6 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4C7A329812EF60001EAD6 /* SignupFormModelValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E6C4C78929812C8B0001EAD6 /* XCTAssertNoThrowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTAssertNoThrowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C4C78D29812C8B0001EAD6 /* XCTAssertNoThrowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTAssertNoThrowUITests.swift; sourceTree = "<group>"; };
 		E6C4C78F29812C8B0001EAD6 /* XCTAssertNoThrowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTAssertNoThrowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6C4C79D29812D550001EAD6 /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
+		E6C4C79F29812D670001EAD6 /* SignupFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormValidator.swift; sourceTree = "<group>"; };
+		E6C4C7A129812D7A0001EAD6 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
+		E6C4C7A329812EF60001EAD6 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		E6C4C76B29812C870001EAD6 /* XCTAssertNoThrow */ = {
 			isa = PBXGroup;
 			children = (
+				E6C4C79C29812D400001EAD6 /* Models */,
 				E6C4C76C29812C870001EAD6 /* AppDelegate.swift */,
 				E6C4C76E29812C870001EAD6 /* SceneDelegate.swift */,
 				E6C4C77029812C870001EAD6 /* ViewController.swift */,
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C4C78329812C8B0001EAD6 /* XCTAssertNoThrowTests.swift */,
+				E6C4C7A329812EF60001EAD6 /* SignupFormModelValidatorTests.swift */,
 			);
 			path = XCTAssertNoThrowTests;
 			sourceTree = "<group>";
@@ -125,6 +135,16 @@
 				E6C4C78F29812C8B0001EAD6 /* XCTAssertNoThrowUITestsLaunchTests.swift */,
 			);
 			path = XCTAssertNoThrowUITests;
+			sourceTree = "<group>";
+		};
+		E6C4C79C29812D400001EAD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6C4C79D29812D550001EAD6 /* SignupError.swift */,
+				E6C4C79F29812D670001EAD6 /* SignupFormValidator.swift */,
+				E6C4C7A129812D7A0001EAD6 /* SignupFormModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C4C79E29812D550001EAD6 /* SignupError.swift in Sources */,
+				E6C4C7A229812D7A0001EAD6 /* SignupFormModel.swift in Sources */,
 				E6C4C77129812C870001EAD6 /* ViewController.swift in Sources */,
+				E6C4C7A029812D670001EAD6 /* SignupFormValidator.swift in Sources */,
 				E6C4C76D29812C870001EAD6 /* AppDelegate.swift in Sources */,
 				E6C4C76F29812C870001EAD6 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C4C7A429812EF60001EAD6 /* SignupFormModelValidatorTests.swift in Sources */,
 				E6C4C78429812C8B0001EAD6 /* XCTAssertNoThrowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
