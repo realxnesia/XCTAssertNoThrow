@@ -69,4 +69,15 @@ final class SignupFormModelValidatorTests: XCTestCase {
         }
     }
     
+    func test_FirstNameValidation_WhenValidCharactesProvided_ThrowsNoErrors_withDoTryCatch() {
+        // Arrange
+        let sut = SignupFormModelValidator()
+        
+        //Act and Assert
+        do {
+            let _ = try sut.isFirstNameValid("Dhika")
+        } catch {
+            XCTFail("The isFirstNamevalid() was supposed to thrown an error when a valid first name value was provided")
+        }
+    }
 }
